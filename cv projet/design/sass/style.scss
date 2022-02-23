@@ -1,0 +1,393 @@
+@import 'variable';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Rajdhani', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+/***haut gauche**/
+#tete {
+    background-color:$couleurSecondaire ;
+    text-align: center;
+    width: 30%;
+}
+#identite {
+    background-color:$couleurPrincipal;
+    color: $couleurSecondaire;
+    height: 1700px;
+    width: 100%;
+    border-radius: 0 0 120px 0px;
+
+    
+    img {
+        width: 40%;
+        margin-top: 60px;
+        margin-bottom: 45px;
+    }
+    p {
+        text-align: justify;
+        margin: 0 15px;
+        font-size: 20px;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+#personnel {
+    height: 600px;
+    width: 100%;
+    
+
+    h3 {
+        text-transform: uppercase;
+        margin: 30px;
+
+        font-size: 25px;
+        color: $couleurPrincipal;
+    }
+
+    #contact {
+        width: 80%;
+        margin: auto;
+    }
+
+    #telephone, #email, #domicile, #competence, #langue {
+        display: flex;
+        justify-content: center;
+        font: {
+            size: 18px;
+            weight: bold;
+        }      
+    }
+    #telephone,#domicile {
+        margin-left: -110px;
+    
+    }
+    i {
+        margin-right: 15px;
+    }
+
+    #competence {
+        
+        progress {
+            height: 30px;
+        }
+
+        ul :nth-child(1){
+            margin-left: 30px;
+        }
+        ul :nth-child(2){
+            margin-left: 0px;
+        }
+    }
+    #langue {
+        progress {
+            height: 30px;
+        }
+    }
+    
+}
+
+
+.container {
+    display: flex;
+}
+
+#block-nom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+#nom{
+    background: $couleurSecondaire;
+    color: $couleurPrincipal;
+    height: 300px;
+    text-align: center;
+    
+    h1{
+        margin-top: 60px;
+    }
+    h2 {
+        margin-top: 30px;
+    }
+}
+/***progress bar**/
+
+
+.skill {
+    width: 160px;
+    height: 160px;
+    /**backgorund**/
+    position: relative;
+    margin-left: 100px;
+    
+    
+    h4 {
+        margin-left: 65px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: $couleurPrincipal;
+    }
+
+    .grand-titre {
+        margin-left: 47px;
+    }
+    
+}
+.outer {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    padding: 20px;
+    position: relative;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255,1),
+    -0.5px -0.5px 0px  rgba(255,255,255,1),
+    0.5px 0.5px 0px  rgba(0,0,0,0.15),
+    0px 12px 10px -10px  rgba(0,0,0,0.05);
+}
+#number {
+    font: {
+        weight:bold;
+        size: 20px
+    }
+    color:$couleurSecondaire;
+}
+
+circle  {
+    fill: none;
+    stroke: url(#colorHTML);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;  
+    
+}
+
+
+circle#circleHTML  {
+
+    animation: circleHTML 2s linear forwards;
+   
+}
+circle#circleCSS  {
+
+    animation: circleCSS 2s linear forwards;
+   
+}
+circle#circleJS {
+
+    animation: circleJS 2s linear forwards;
+   
+}
+circle#circlePHP  {
+
+    animation: circlePHP 2s linear forwards;
+   
+}
+circle#circleBT  {
+
+    animation: circleBT 2s linear forwards;
+   
+}
+circle#circleSASS {
+
+    animation: circleSASS 2s linear forwards;
+   
+}
+circle#circleWP  {
+
+    animation: circleWP 2s linear forwards;
+   
+}
+circle#circleSQL {
+
+    animation: circleSQL 2s linear forwards;
+   
+}
+svg {
+    position: absolute;
+    top: 56px;
+    left: 0;
+
+}
+@keyframes circleHTML {
+    100%{
+        stroke-dashoffset: 141;
+    }
+}
+@keyframes circleCSS{
+    100%{
+        stroke-dashoffset: 188;
+    }
+}
+@keyframes circleJS {
+    100%{
+        stroke-dashoffset: 330;
+    }
+}
+@keyframes circlePHP {
+    100%{
+        stroke-dashoffset: 306;
+    }
+}
+@keyframes circleBT {
+    100%{
+        stroke-dashoffset: 236;
+    }
+}
+@keyframes circleSASS {
+    100%{
+        stroke-dashoffset: 283;
+    }
+}
+@keyframes circleWP {
+    100%{
+        stroke-dashoffset: 283;
+    }
+}
+@keyframes circleSQL {
+    100%{
+        stroke-dashoffset: 377;
+    }
+}
+
+
+#principale {
+    width: 100%;
+    height: 600px;
+}
+.ligne {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content:space-around;
+}
+
+/***EXPERIENCE***/
+
+#experience, #education,#interet {
+    margin-top: 60px;
+    margin-left: 110px;
+
+    h3 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    h3.horizontal:after {
+    content: '';
+    width: 80%;
+    margin-left: 10px;
+    border-bottom: 1px rgba(0, 0, 0, 0.3) solid;
+    display: inline-block;
+    vertical-align: middle;
+    }
+    #horizontal-grand {
+        margin-top: 25px;
+    }
+    h3#horizontal-grand:after {
+    content: '';
+    width: 70%;
+    margin-left: 10px;
+    border-bottom: 1px rgba(0, 0, 0, 0.3) solid;
+    display: inline-block;
+    vertical-align: middle;
+    }
+    h4 {
+        font-size: 22px;
+        margin-top: 20px;
+
+        .fa-square {
+            margin-right: 10px;
+            color: $couleurTertiaire;
+        }
+        .entreprise{
+            color: gray;
+            font-size: 19px;
+        }
+        // #vertical, #vertical2, #vertical3 {
+        //     border:1px solid #5F1111;
+        //     height:85px;
+        //     position: absolute;
+        //     left: 557px;
+        // }
+        // #vertical {
+        //     top:1049px; 
+        // }
+        // #vertical2 {
+        //     top:1149px;
+
+        // }
+        // #vertical3 {
+        //     top:1249px;
+        // }
+
+     
+    }
+    h5 {
+        font-size: 20px;
+
+        .entreprise {
+            color: grey;
+            font-size: 17px;
+        }
+    }
+
+    li {
+        font-size: 20px;
+        color: rgb(255, 102, 0);
+        margin-left: 28px;
+    }
+}
+/***EDUCATION**/
+// h4 {
+//     #vertical-education1, #vertical-education2{
+//         border:1px solid #5F1111;
+//         height:85px;
+//         position: absolute;
+//         left: 557px;
+//     }
+//     #vertical-education1 {
+//         top:1909px
+//     }
+//     #vertical-education2 {
+//         top:1809px
+//     }
+  
+// }
+
+/***ineret**/
+#liste-interet {
+    display: flex;
+
+    li {
+        margin-left: 40px;
+        font-size: 20px;
+
+        i {
+            color: $couleurPrincipal;
+        }
+    }
+}
